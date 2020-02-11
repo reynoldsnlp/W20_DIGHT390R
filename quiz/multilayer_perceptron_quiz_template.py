@@ -23,7 +23,7 @@ def get_toy_data(batch_size):
         x_data.append(np.random.normal(loc=CENTERS[center_idx]))
         y_targets[batch_i] = LABELS[center_idx]
     return (torch.tensor(x_data, dtype=torch.float32),
-            torch.tensor(y_targets, dtype=torch.int64))
+            torch.tensor(y_targets, dtype=torch.float32))
 
 
 # 1) Write a new Pytorch module with two fully connected layers
