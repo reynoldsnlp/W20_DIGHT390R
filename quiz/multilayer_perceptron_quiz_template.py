@@ -24,3 +24,9 @@ def get_toy_data(batch_size):
         y_targets[batch_i] = LABELS[center_idx]
     return (torch.tensor(x_data, dtype=torch.float32),
             torch.tensor(y_targets, dtype=torch.int64))
+
+
+# 1) Write a new Pytorch module with two fully connected layers
+
+# 2) Write a training loop using `get_toy_data()`. On each iteration, print
+# your loss.
